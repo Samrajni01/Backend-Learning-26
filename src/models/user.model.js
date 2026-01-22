@@ -17,11 +17,11 @@ const userSchema=new Schema(
         unique:true,
         lowercase:true,
         trim:true,
-        //match: [/^[^\s@]+@[^\s@]+\.[^\s@]+$/, "Invalid email"]
+        match: [/^[^\s@]+@[^\s@]+\.[^\s@]+$/, "Invalid email"]
        
     },password:{
         type:String,
-        required:[true,"password is reuired"],
+        required:[true,"password is required"],
        
        
     },fullname:{
